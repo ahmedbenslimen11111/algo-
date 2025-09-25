@@ -1,0 +1,22 @@
+ALGORITHM Sentence_Len
+VAR
+Letter : CHAR;
+i : INTEGER := 0;
+x : INTEGER := 1;
+Y: INTEGER : - 0;
+BEGIN
+REPEAT
+Write("Enter your character: ")
+Read (Letter);
+i := i + 1;
+IF (Letter =* *) THEN
+X:= x + 1;
+END_IF
+IF (Letter - "a" OR Letter -"e" OR Letter ="1" OR Letter -"0" OR Letter ="u" OR Letter -"y" -OR Letter ="A"
+OR Letter -"E" OR Letter -"I" OR Letter -"0* OR Letter -"U* OR Letter -"y") THEN y :- y + 1;
+END_ IF
+UNTIL (Letter - "-™);
+Write("This is the sentence's length: "1);
+Write("This is the number of words: *x);
+Write("this is the number of vowels: "y)
+END
