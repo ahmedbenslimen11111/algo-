@@ -1,0 +1,37 @@
+Algorithm sum_distinct_elements
+Variables:
+tab1, tab2 : array of integers
+n1, n2, i, j : integers
+sum : integer
+
+Begin
+sum ← 0
+
+// Step 1: traverse tab1
+For i ← 1 to n1 do
+found ← FALSE
+For j ← 1 to n2 do
+If tab1[i] = tab2[j] then
+found ← TRUE
+EndIf
+EndFor
+If NOT found then
+sum ← sum + tab1[i]
+EndIf
+EndFor
+
+// Step 2: traverse tab2
+For i ← 1 to n2 do
+found ← FALSE
+For j ← 1 to n1 do
+If tab2[i] = tab1[j] then
+found ← TRUE
+EndIf
+EndFor
+If NOT found then
+sum ← sum + tab2[i]
+EndIf
+EndFor
+
+Write("The sum of distinct elements is: ", sum)
+End

@@ -20,3 +20,50 @@ Write("This is the sentence's length: "1);
 Write("This is the number of words: *x);
 Write("this is the number of vowels: "y)
 END
+
+
+VAR
+   a : ARRAY_OF INTEGER := [2,20,5,3,4,1];
+   b: ARRAY_OF INTEGER := [4,3,1,2,10,55,66];
+   sum : INTEGER :=0 ; 
+  
+BEGIN
+FOR i FROM 1 TO a.length STEP 1  DO
+
+    FOR j FROM 1 TO b.length STEP 1  DO
+      IF (t[i]= v[j]) THEN
+         sum := sum + t[i]*2
+         break
+      END_IF
+END_FOR
+         
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
